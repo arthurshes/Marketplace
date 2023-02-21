@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/backgray"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imagearrow77"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_baseline_arrow_back_26"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.007"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="Новый товар"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imagearrow77"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imagenewtovar1"
+                    android:layout_width="71dp"
+                    android:layout_height="71dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/camera"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="6dp" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imagenewtovar2"
+                    android:layout_width="71dp"
+                    android:layout_height="71dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/camera"
+                    app:layout_constraintStart_toEndOf="@+id/imagenewtovar1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="6dp" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imagenewtovar3"
+                    android:layout_width="71dp"
+                    android:layout_height="71dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/camera"
+                    app:layout_constraintStart_toEndOf="@+id/imagenewtovar2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="6dp" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imagenewtovar4"
+                    android:layout_width="71dp"
+                    android:layout_height="71dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/camera"
+                    app:layout_constraintStart_toEndOf="@+id/imagenewtovar3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="6dp" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imagenewtovar5"
+                    android:layout_width="71dp"
+                    android:layout_height="71dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/camera"
+                    app:layout_constraintStart_toEndOf="@+id/imagenewtovar4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="6dp" />
+                <EditText
+                    android:id="@+id/editTextNamei2"
+                    android:layout_width="392dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/black"
+                    android:drawableStart="@drawable/ic_baseline_title_24"
+                    android:hint="Название товара"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.842"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imagenewtovar3" />
+
+                <EditText
+                    android:id="@+id/editTextPricei3"
+                    android:layout_width="390dp"
+                    android:inputType="number"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/black"
+                    android:drawableStart="@drawable/ic_baseline_currency_ruble_24"
+                    android:hint="Цена"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.823"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNamei2" />
+
+                <EditText
+                    android:id="@+id/editTextOpisi4"
+                    android:layout_width="392dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/black"
+                    android:drawableStart="@drawable/ic_baseline_format_list_bulleted_24"
+                    android:hint="Описание(До 150символов)"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.842"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextPricei3"
+                    app:layout_constraintVertical_bias="1.0" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="391dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/textview_design"
+            android:backgroundTint="@color/white"
+            android:gravity="center_vertical"
+
+            android:text="Категория"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAddt"
+            android:layout_width="330dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/darkgreen"
+            android:text="Добавить товар"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.629"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Shops.BottomFragShopZakInfo.bottomInfoZakazshopsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="405dp"
+        android:layout_height="386dp"
+        android:backgroundTint="@color/backColor"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="408dp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textitogprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="на 25000руб"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.054"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/clientnametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Имя клиента:Артур"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+            <TextView
+                android:id="@+id/textadressshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Якутск,Кулаковского 27"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+            <TextView
+                android:id="@+id/textpodezd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="11dp"
+                android:text="3подъезд,"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textadressshop"
+                app:layout_constraintTop_toBottomOf="@+id/textadressshop" />
+
+            <TextView
+                android:id="@+id/lvltextshop"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="22этаж,"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textpodezd"
+                app:layout_constraintStart_toEndOf="@+id/textpodezd"
+                app:layout_constraintTop_toTopOf="@+id/textpodezd"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/kvartiratextshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="12dp"
+                android:text="квартира 57"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textpodezd"
+                app:layout_constraintStart_toEndOf="@+id/lvltextshop"
+                app:layout_constraintTop_toTopOf="@+id/textpodezd"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/domophonetextsho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="5dp"
+                android:text="Домофон:57"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/contactsphone"
+                app:layout_constraintStart_toStartOf="@+id/contactsphone"
+                app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+            <TextView
+                android:id="@+id/contactsphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                android:layout_marginEnd="47dp"
+                android:text="+79142214012"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/clientnametext"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/clientnametext"
+                app:layout_constraintTop_toBottomOf="@+id/clientnametext" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="64dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView5"
+                app:layout_constraintStart_toStartOf="@+id/imageView5"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                app:srcCompat="@drawable/ic_baseline_person_24" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toStartOf="@+id/textitogprice"
+                app:layout_constraintTop_toBottomOf="@+id/textitogprice"
+                app:srcCompat="@drawable/map" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                app:srcCompat="@drawable/domophone" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/otpravil"
+                android:layout_width="201dp"
+                android:layout_height="50dp"
+                android:background="@drawable/pozvon"
+                android:backgroundTint="@color/darkgreen"
+                android:text="Товар отправлен"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.952" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/pozvon"
+                android:layout_width="201dp"
+                android:layout_height="50dp"
+                android:background="@drawable/pozvon"
+                android:text="Позвонить"
+                android:textColor="@color/darkgreen"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.952" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

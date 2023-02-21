@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="162dp"
+        android:layout_height="205dp"
+  android:layout_marginLeft="35dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        android:id="@+id/tovarmycard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012" >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="220dp"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/tovarmyimage"
+                android:layout_width="162dp"
+                android:layout_height="151dp"
+                android:scaleType="centerCrop"
+                android:background="@color/backColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                />
+
+
+            <TextView
+                android:id="@+id/tovaarmyname"
+                android:layout_width="67dp"
+                android:layout_height="11dp"
+                android:layout_marginTop="12dp"
+
+                android:background="@color/gray"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tovarmyimage" />
+
+            <TextView
+                android:id="@+id/tovarmyprice"
+                android:layout_width="46sp"
+                android:layout_height="11dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tovaarmyname" />
+
+            <TextView
+                android:id="@+id/texttovarstatyesnal"
+                android:layout_width="99dp"
+                android:layout_height="19dp"
+                android:background="@drawable/text_nal_des"
+                android:backgroundTint="@color/gray"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.709" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    tools:context=".Client.SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/white"
+            android:layout_height="62dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="11dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/arrowhome"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/ic_baseline_arrow_back_26"/>
+                <EditText
+                    android:layout_width="340dp"
+                    android:id="@+id/search_edits"
+                    android:background="@drawable/search_design_text"
+                    android:backgroundTint="@color/gray"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="6dp"
+                    android:drawableEnd="@drawable/ic_baseline_search_24"
+                    android:gravity="center_vertical"
+                    android:layout_height="42dp"
+                    android:hint="Найти магазин"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_recycler"/>
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>
